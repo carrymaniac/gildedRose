@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        mavenCentral()
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+    testImplementation 'com.approvaltests:approvaltests:5.0.0'
+    compile 'com.google.guava:guava:26.0-jre'
+}
+
+group = 'com.gildedrose'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+test {
+    useJUnitPlatform()
+}
