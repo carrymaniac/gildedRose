@@ -14,12 +14,24 @@ public class Item {
         this.quality = quality;
     }
 
-   @Override
-   public String toString() {
+    @Override
+    public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;
     }
 
     boolean isEquals(String s) {
         return s.equals(name);
+    }
+
+    boolean isAged_brie() {
+        return isEquals("Aged Brie");
+    }
+
+    boolean isBackstagePasses() {
+        return isEquals("Backstage passes to a TAFKAL80ETC concert");
+    }
+
+    boolean isSulfuras() {
+        return isEquals("Sulfuras, Hand of Ragnaros");
     }
 }
