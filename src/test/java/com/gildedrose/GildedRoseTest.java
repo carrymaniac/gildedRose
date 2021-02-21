@@ -14,7 +14,4 @@ class GildedRoseTest {
         assertEquals("foo", app.items[0].name);
     }
 
-    @Test
-    void() {
-    }
 }
