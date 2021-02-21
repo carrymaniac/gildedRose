@@ -15,17 +15,17 @@ public class TexttestFixture {
         PrintStream out = new PrintStream(byteArrayOutputStream);
         out.println("OMGHAI!");
 
-        Item[] items = new Item[] {
+        Item[] items = new Item[]{
                 new DexterityVest(10, 20), //
                 new AgedBrie(2, 0), //
-                new Item("Elixir of the Mongoose", 5, 7), //
+                new Mongoose(5, 7), //
                 new Item("Sulfuras, Hand of Ragnaros", 0, 80), //
                 new Item("Sulfuras, Hand of Ragnaros", -1, 80),
                 new BackstagePasses(15, 20),
                 new BackstagePasses(10, 49),
                 new BackstagePasses(5, 49),
                 // this conjured item does not work properly yet
-                new Item("Conjured Mana Cake", 3, 6)};
+                new ManaCake(3, 6)};
 
         GildedRose app = new GildedRose(items);
 
