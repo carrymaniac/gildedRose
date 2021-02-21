@@ -5,5 +5,15 @@ public class Sulfuras extends Item {
         super("Sulfuras, Hand of Ragnaros", sellIn, quality);
     }
 
+    @Override
+    void updateQualityForItem() {
+    }
 
+    @Override
+    void updateSellIn() {
+    }
+
+    @Override
+    void updateQualityIfSellInLessThanZero() {
+    }
 }
